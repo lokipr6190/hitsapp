@@ -4,7 +4,7 @@ const app = express();
 
 // Database connection configuration
 const pool = new Pool({
-  host: process.env.DB_HOST || 'postgresql', // Service name in OpenShift
+  host: process.env.DB_HOST || 'postgres-db-hits', // Service name in OpenShift
   user: process.env.DB_USER || 'user',
   password: process.env.DB_PASSWORD || 'pass',
   database: process.env.DB_NAME || 'hitsdb',
